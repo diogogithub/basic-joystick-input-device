@@ -1,0 +1,131 @@
+/** theme: base
+ *
+ * @package   Basic Joystick Input Device
+ * @author    Diogo Cordeiro <up201705417@fc.up.pt>
+ * @copyright 2018 Diogo Cordeiro.
+ * @license   http://creativecommons.org/licenses/by/3.0/ Creative Commons Attribution 3.0 Unported
+ * @link      https://www.diogo.site/projects/basic-joystick-input-device/
+ */
+
+/* Resets css values */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{
+        display: block
+}
+
+body
+{
+        line-height: 1
+}
+
+ol,ul
+{
+        list-style: none
+}
+
+blockquote,q
+{
+        quotes: none
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+        content: '';
+        content: none
+}
+
+table
+{
+        border-collapse: collapse;
+        border-spacing: 0
+}
+
+/* Custom styling */
+
+/* Sets font type to Code */
+@font-face,.container,.text
+{
+        font-family:code, sans-serif
+}
+
+/* Sets overall font, size, and blocks user highlighting/dragging */
+.container
+{
+        width: 100%;
+        cursor: default;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+}
+
+/* Center leds and text */
+.images,.text
+{
+        text-align: center
+}
+
+/* Cursor over led shall be a pointer */
+.led:hover
+{
+        cursor: pointer
+}
+
+/* single led container */
+.box
+{
+        display: inline-block
+}
+
+.box,.labels
+{
+        position: relative
+}
+
+/* single led */
+.led
+{
+        margin-top: 1vh;
+        display: block;
+        z-index: 0;
+        opacity: 100;
+        width: 90%
+}
+
+/* Footer/Credits */
+#footer
+{
+        font-size: 12px;
+        margin-top: 3vw
+}
